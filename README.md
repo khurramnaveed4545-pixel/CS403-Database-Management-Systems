@@ -11,7 +11,9 @@
 ---
 
 ## Overview of Lecture
+
 Is lecture me cover hota hai:
+
 1. Introduction to DBMS course  
 2. Database Definitions  
 3. Importance of Databases  
@@ -76,7 +78,7 @@ Database ensures **consistency & reliability**.
 
 ---
 
-## 🔹 Databases and Traditional File Processing Systems
+## Databases and Traditional File Processing Systems
 
 ### Traditional File System (TFS):
 
@@ -121,6 +123,7 @@ Sab ek hi shared database use karte hain → **fast aur error-free process**.
 
 ---
 
-## ✅ One Line Recap (Lecture 1)
-**DBMS ek conceptual system hai jo real-world data aur business rules ko efficiently aur securely manage karta hai.  
-Traditional File System ke muqable me DBMS zyada reliable, consistent aur powerful hai.**
+## One Line Recap (Lecture 1)
+
+- **DBMS ek conceptual system hai jo real-world data aur business rules ko efficiently aur securely manage karta hai.  
+- Traditional File System ke muqable me DBMS zyada reliable, consistent aur powerful hai.**
