@@ -125,5 +125,5 @@ Sab ek hi shared database use karte hain → **fast aur error-free process**.
 
 ## One Line Recap (Lecture 1)
 
-- **DBMS ek conceptual system hai jo real-world data aur business rules ko efficiently aur securely manage karta hai.  
+- **DBMS** ek conceptual system hai jo real-world data aur business rules ko efficiently aur securely manage karta hai.  
 - Traditional File System ke muqable me DBMS zyada reliable, consistent aur powerful hai.**
