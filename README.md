@@ -229,7 +229,7 @@ Topics me aata hai:
 
 ---
 
-## Difference between Data and Information
+## 1.  Difference between Data and Information
 
 Data asal me raw facts ka collection hota hai jo kisi specific environment se ek khaas purpose ke liye collect kiya jata hai. Data apne aap me apne environment ke bare me kuch show nahi karta. Is liye agar humein data se desired results chahiyein to humein uspar processing apply karni padti hai. Jab hum data ko different methods ke zariye process karte hain to woh ek meaningful form me convert ho jata hai, aur us meaningful form ko hi Information kehte hain.
 
@@ -245,7 +245,7 @@ Information → *"Ali ki salary 80,000 hai jo department average se zyada hai."*
 
 ---
 
-## Further Advantages of Database Systems
+## 2. Further Advantages of Database Systems
 
 ### 1. Data Consistency
 DBMS ensure karta hai ke ek hi data har jagah same aur updated ho.  
@@ -294,7 +294,7 @@ DBMS ke andar built-in backup aur recovery mechanisms hote hain jo system crash 
 
 ---
 
-# Cost Involved: / Additional Costs / Disadvantages of Database Systems  
+# 3. Cost Involved: / Additional Costs / Disadvantages of Database Systems  
 
 Databases ke benefits enjoy karne ke sath sath, unhein adopt karne wali organizations ko kuch **additional costs** bhi face karni parti hain.  
 Ye costs kabhi kabhi database systems ke **disadvantages** ke roop me bhi samjhe jate hain.  
@@ -345,9 +345,9 @@ Agar ek hospital ka database crash ho jaye to uske patients ka data sirf expert 
 
 ---
 
-## Importance of Data
+## 4. Importance of Data
 
-# 📊 Data as a Resource  
+# Data as a Resource  
 
 ##  Resource ki Definition  
 Resource woh cheez hoti hai jo organization ke liye **valuable** ho.  
@@ -399,7 +399,7 @@ Agar ek company ke paas accurate **sales data** nahi hoga to woh market me compe
 
 ---
 
-## Levels of Data
+## 5. Levels of Data
 
 DBMS me data ko samajhne ke liye 3 main levels hote hain:  
 
@@ -435,7 +435,7 @@ Meta Data batata hai:
 Ye level asal me woh **data store karta hai jo real world entities ka hota hai**,  
 aur woh bilkul usi tarah save hota hai jaise Meta Data me rules define kiye gaye hain.  
 
-### 🌍 Example (Student Table):  
+### Example (Student Table):  
 
 | Name  | Age        | Class  |  
 |-------|------------|--------|  
@@ -451,7 +451,7 @@ aur woh bilkul usi tarah save hota hai jaise Meta Data me rules define kiye gaye
 
 ---
 
-## Users of Database Systems
+## 6.  Users of Database Systems
 
 Database systems ko use karne wale users ko alag-alag categories me divide kiya jata hai:  
 
