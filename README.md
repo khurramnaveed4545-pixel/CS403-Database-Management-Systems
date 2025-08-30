@@ -206,4 +206,100 @@ DBMS har jagah use hota hai:
 - University record systems  
 - Utility billing systems  
 - Online shopping platforms  
-- Hospital management systems  
+- Hospital management systems
+
+# Lecture 2 Notes
+
+---
+
+## Overview of Lecture
+
+Is lecture me hum DBMS ka introduction dekhte hain aur samajhte hain ke ye system kyu bana aur kahan use hota hai. 
+
+Topics me aata hai:  
+
+- Data aur information ka difference  
+- Databases ke advantages  
+- Cost factors  
+- Data ki importance  
+- Data ke levels  
+- DBMS users  
+
+**Note:** Ye lecture ek foundation provide karta hai jo agli lectures ko samajhne ke liye base banega.  
+
+---
+
+## Difference between Data and Information
+
+- **Data:** Raw facts hote hain – jaise ek list of numbers, ya employees ke naam aur unki salaries. Ye apne aap me sense nahi banate.  
+- **Information:** Jab hum isi data ko process karke, organize karke aur meaningful form me present karte hain to ye information ban jata hai.  
+
+**Example:**  
+
+Data → `Ali, 80,000`  
+Information → *"Ali ki salary 80,000 hai jo department average se zyada hai."*  
+
+**Exam Point:** Data ko process karne ke baad hi wo decision making me madad karta hai.  
+
+---
+
+## Further Advantages of Database Systems
+DBMS ke kuch additional advantages ye hain:  
+1. **Data Sharing:** Multiple users ek hi waqt par data access kar sakte hain.  
+2. **Less Redundancy:** Same data bar bar alag files me save nahi karna padta.  
+3. **Consistency:** Data hamesha updated aur accurate rehta hai.  
+4. **Security:** Unauthorized users ko data access nahi milta.  
+5. **Backup and Recovery:** Agar system crash ho jaye to bhi data restore ho jata hai.  
+
+**Real-Life Example:**  
+Ek **university database** me student records har department ko accessible hain, lekin har user ko sirf apni authority ke mutabiq access milta hai.  
+
+---
+
+## Cost Involved
+
+- **DBMS ki cost high hoti hai:**  
+  - Software license expensive hota hai.  
+  - Skilled staff hire karna padta hai jo system ko install aur maintain kare.  
+  - Training aur hardware ki cost bhi shamil hoti hai.  
+
+**Key Point:** DBMS ek **investment** hai jo zyada tar bade organizations afford karte hain, lekin choti companies ke liye mushkil hota hai.  
+
+---
+
+## Importance of Data
+- Data har organization ke liye ek **valuable asset** hai – bilkul paisay, land ya equipment ki tarah.  
+- Sahi data ke baghair **decision making mushkil** ho jata hai.  
+
+**Example:**  
+
+Agar ek company ke paas accurate **sales data** nahi hoga to woh market me compete nahi kar paayegi.  
+
+**Exam Point:** Data = Asset, isko protect aur efficiently manage karna zaroori hai.  
+
+---
+
+## Levels of Data
+
+DBMS me data ke 3 levels hote hain: 
+
+1. **Real-World Data:** Actual cheezen (students, teachers, courses).  
+2. **Stored Data:** Jo DBMS ke andar tables aur records me save hota hai.  
+3. **Metadata:** Data ke bare me data (jaise “is table me 4 columns hain aur yeh field primary key hai”).  
+
+**Example:**  
+
+Ek **hospital system** me patient ka naam aur report = stored data,  
+aur us table ka structure = metadata.  
+
+---
+
+## Users of Database Systems
+DBMS ko use karne wale users categories me divide hote hain:  
+1. **End Users:** Jo applications ke zariye apna kaam karte hain (ATM customers, students using portals).  
+2. **Application Programmers:** Jo DBMS ke upar programs likhte hain.  
+3. **Sophisticated Users:** Jo complex queries aur analysis karte hain (management, researchers).  
+4. **Database Administrators (DBA):** System ki security, backup, performance aur maintenance ke zimmedar hote hain.  
+
+**Exam Point:** DBA is the most critical role in database systems.  
+
