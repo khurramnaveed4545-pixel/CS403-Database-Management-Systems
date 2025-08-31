@@ -127,7 +127,7 @@ Databases ke kuch major faide ye hain:
   
 --- 
 
-### Further Advantages of Database Systems:
+## Further Advantages of Database Systems:
 
 Database systems are very much beneficent to enterprises and businesses, some of the advantages are listed below:
 
