@@ -1,6 +1,6 @@
-## Lecture 1 
+# Lecture 1 of DBMS ( Database Managment Systems ) 
 
-# Overview of Lecture
+## Overview of Lecture
 
 Is lecture ka overview ye hai ke hum **Database Management System (DBMS)** ke basic concepts ko samajhne wale hain.  
 Sabse pehle course ka introduction hoga, phir hum database ki definitions dekhenge, phir samjhenge ke databases ki importance kya hai aur woh traditional file processing system se kis tarah behtareen hain.  
@@ -8,7 +8,7 @@ Akhir mein, hum DBMS ke advantages ko discuss karenge.
 
 ---
 
-# Introduction to the Course
+## Introduction to the Course
 
 Ye course **DBMS** par hai — yaani *Database Management System*.  
 Is course ka maqsad aapko yeh sikhana hai ke database kya hota hai, woh kis tarah design aur manage kiya jata hai, aur usay real-life applications mein kis tarah use kiya jata hai.  
@@ -24,7 +24,7 @@ Ye course students ko ek **base** deta hai jo unhein programming aur real-world 
 
 ---
 
-# Database Definitions
+## Database Definitions
 
 An organized collection of information in computerized format.
 
@@ -40,7 +40,7 @@ Database ke peeche jo software system hota hai jo data ko manage karta hai, usay
 
 ---
 
-# Importance of the Databases
+## Importance of the Databases
 
 In today’s world, databases have become extremely important because every organization needs to store and process its data in a structured way.
 
@@ -65,7 +65,7 @@ Is liye databases har modern system ki **backbone** ban gaye hain.
 
 ---
 
-# Databases and Traditional File Processing Systems
+## Databases and Traditional File Processing Systems
 
 Before the use of DBMS, people relied on traditional file processing systems. In this approach, data was stored in separate files such as text documents or spreadsheets.
 
@@ -91,7 +91,7 @@ Ab data **centralized aur controlled environment** mein rakha jata hai jahan mul
 
 ---
 
-# Advantages of Databases
+## Advantages of Databases
 
 - **Reduced Redundancy** – Duplicate data is minimized, preventing unnecessary repetition.
 - **Data Consistency** – Every user can access the most updated and accurate data.
