@@ -120,7 +120,7 @@ Databases ke kuch major faide ye hain:
 5. **Levels of Data** 
 6. **Users of Database Systems** 
 
-## 1. Difference between Data and Information  
+# 1. Difference between Data and Information  
 
 **Data**  
 - Data is a collection of raw facts collected from any place or situation for a specific purpose.  
@@ -136,7 +136,7 @@ Databases ke kuch major faide ye hain:
   
 --- 
 
-## 2. Further Advantages of Database Systems:
+# 2. Further Advantages of Database Systems:
 
 Database systems are very much beneficent to enterprises and businesses, some of the advantages are listed below:
 
@@ -202,7 +202,7 @@ Database systems are very much beneficent to enterprises and businesses, some of
  
 --- 
 
-## 3. Cost Involved: 
+# 3. Cost Involved: 
 
 ### High Cost  
  
@@ -229,7 +229,7 @@ Although database systems provide efficient methods for data recovery after a di
 **Roman Urdu:**  
 Halaanke database systems data recovery ke efficient tareeqay dete hain jab koi disaster ho, lekin crashed database ko recover karna phir bhi bohot technical process hota hai. Iske liye professional skills aur expertise ki zarurat hoti hai taake recovery sahi tareeqay se ho aur system wapis consistent state mein aa jaye.  
 
-## 4. Importance of Data 
+# 4. Importance of Data 
 
 ## Data as a Resource  
 
@@ -243,9 +243,9 @@ Data is considered a true resource because it helps an organization make the rig
 
 Data ko ek asal resource is liye mana jata hai kyunke yeh organization ko sahi waqt par sahi decisions lene mein madad karta hai. Sirf data hi correct information provide karta hai jo baaki organizational resources ka sahi istemal mumkin banata hai. Agar required data waqt par available na ho ya sahi format mein na ho, to organization achay aur effective decisions nahi le sakti. Aise ghalat ya late decisions organization ya business ki failure ka sabab ban sakte hain.  
 
-## 5 Levels of Data
+# 5.  Levels of Data
 
-# Real World Data
+## Real World Data
 
 The real world level of data is the level where entities or objects exist in reality. It means that any object in real life has a name and other identifiable features that help us recognize it.  
 
@@ -257,7 +257,7 @@ Any Student
 
 ---
 
-# Meta Data
+## Meta Data
 
 Meta data defines how data about real-world entities will be stored in the database. It is also called a schema. Meta data specifies what type of data will be stored, the size of each attribute, and how many attributes will be used.  
 
@@ -271,7 +271,7 @@ Meta data batata hai ke real world entities ka data database mein kaise store ho
 
 ---
 
-# Existence of Data
+## Existence of Data
 
 Existence of data shows the actual data for entities in the real world according to the rules defined in the Meta data.  
 
