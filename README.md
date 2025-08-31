@@ -107,4 +107,6 @@ Databases ke kuch major faide ye hain:
 3. **Security** – Access controls aur authentication ki wajah se sirf authorized log hi data dekh ya modify kar sakte hain.  
 4. **Concurrent Access** – Multiple users ek waqt par data use kar sakte hain bina conflicts ke.  
 5. **Backup and Recovery** – Agar system crash ho jaye to database se data recover ho sakta hai.  
-6. **Integrity** – Rules lagaye ja sakte hain jisse data correct aur valid rahe.  
+6. **Integrity** – Rules lagaye ja sakte hain jisse data correct aur valid rahe.
+
+# Lecture 2 of DBMS ( Database Managment Systems )
