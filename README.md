@@ -111,7 +111,7 @@ Databases ke kuch major faide ye hain:
 
 # Lecture 2 of DBMS ( Database Managment Systems )
 
-## Difference between Data and Information  
+## 1. Difference between Data and Information  
 
 **Data**  
 - Data is a collection of raw facts collected from any place or situation for a specific purpose.  
@@ -127,7 +127,7 @@ Databases ke kuch major faide ye hain:
   
 --- 
 
-## Further Advantages of Database Systems:
+## 2. Further Advantages of Database Systems:
 
 Database systems are very much beneficent to enterprises and businesses, some of the advantages are listed below:
 
