@@ -285,8 +285,99 @@ Existence of data asli data dikhata hai jo real world entities ke liye Meta data
 | Ali  | 20/8/1979  | MCS-I   |
 | Amir | 22/3/1978  | MCS-II  |
 
+# 5.  Users of Database Systems:
 
+# Users of Database Systems
 
+## 1. Application Programmers
+ 
+Application programmers are people who create different types of database application programs. They design applications according to the needs of other users in a specific environment. They are skilled and understand the database structure and the organization's requirements.  
+
+**Simple words men**  
+Application programmers wo log hain jo mukhtalif database application programs banate hain. Ye applications dusre users ki zarurat ke mutabiq design karte hain. Ye skilled hote hain aur database structure aur organization ki zarurat ko achi tarah samajhte hain.  
+
+---
+
+## 2. End Users
+
+End users are the people who use the database programs created by application programmers. There are two types of end users:  
+
+- **Naïve Users:**  
+  These users only use the programs made for them. They do not interact with other parts of the database and do not worry about how the database works.  
+
+- **Sophisticated Users:**  
+  These users have more rights than naïve users. They can access data in any way they want using programs or other methods. They must be skilled and careful not to damage data.  
+
+**Simple words men**  
+End users wo log hain jo application programmers ke banaye hue programs use karte hain. End users ke do types hain:  
+
+- **Naïve Users:**  
+  Ye users sirf un programs ko use karte hain jo un ke liye banaye gaye hain. Ye database ke dusre parts se interact nahi karte aur database ke kaam ki fikar nahi karte.  
+
+- **Sophisticated Users:**  
+Ye users naïve users se zyada rights rakhte hain. Ye data kisi bhi tarah access kar sakte hain programs ya dusre tareeqon se. Ye skilled hone chahiye aur data ko damage ya loss se bachana chahiye.  
+
+---
+
+## 3. Database Administrators (DBA)
+
+DBAs are the most technical users. They manage the database and ensure proper functioning of the DBMS. They handle backups, recovery, and database maintenance. A DBA needs vast experience and strong technical skills.  
+
+**Simple words men**  
+DBAs sab se technical users hain. Ye database manage karte hain aur DBMS ka proper functioning ensure karte hain. Ye backups, recovery, aur maintenance ka khayal rakhte hain. DBA ko bohot tajurba aur strong technical skills ki zarurat hoti hai.  
+
+---
+
+## Duties of a DBA
+
+Some key duties of a DBA include:  
+- Schema definition  
+- Granting and revoking data access  
+- Routine maintenance such as backups, monitoring disk space, and monitoring running jobs  
+
+**Simple words men** 
+
+DBA ke kuch important duties ye hain:  
+- Schema definition  
+- Data access dena aur wapas lena  
+- Routine maintenance jaise backups, disk space monitor karna, aur running jobs monitor karna  
+
+---
+
+## Schema Design
+
+DBAs are responsible for designing the database schema, which is the metadata structure. In very large organizations, this task may be done by a database designer and later handed to the DBA.  
+
+**Simple words men**  
+
+DBAs database schema design karte hain, jo metadata ka structure hai. Bohot badi organizations mein ye kaam database designer karta hai aur database kaam shuru hone ke baad DBA ko handover hota hai.  
+
+---
+
+## Granting Access to Users
+
+DBAs grant access rights to users and ensure legal use of these rights. They can also revoke access if needed.  
+
+**Simple words men**  
+DBAs users ko access rights dete hain aur ensure karte hain ke ye rights legal use hon. Zarurat parne par ye rights wapas bhi le sakte hain.  
+
+---
+
+## Monitoring Disk Space
+
+As the database grows, DBAs monitor disk space to ensure that no overflow occurs.  
+
+**Simple words men**  
+Database ke barhne par DBAs disk space monitor karte hain taake data overflow na ho.  
+
+---
+
+## Monitoring Running Jobs
+
+DBAs continuously monitor database activities to ensure users follow rules and all devices function properly.  
+
+**Simple words men**  
+DBAs continuously database activities monitor karte hain taake users rules follow karein aur saare devices properly kaam kar rahe hon.  
 
 --- 
 
