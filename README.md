@@ -193,3 +193,54 @@ Database systems are very much beneficent to enterprises and businesses, some of
  
 --- 
 
+## 3. Cost Involved: 
+
+### High Cost  
+ 
+Database systems come with several built-in costs. One of the major costs is the requirement of specialized software to run the database, additional hardware, and technically skilled staff. To fulfill all these requirements, an organization needs to invest a large amount of money.  
+
+**Roman Urdu:**  
+Database systems ke sath kuch built-in kharchay hote hain. Sabse bara kharcha specialized software ka hota hai jo database chalane ke liye chahiye hota hai, phir extra aur specialized hardware ki zarurat hoti hai, aur technically skilled staff ki bhi requirement hoti hai. In sab cheezon ko pura karne ke liye organization ko acha khasa paisa invest karna parta hai.  
+
+---
+
+### Conversion Cost  
+ 
+When an organization decides to move to a database system, it is not only financial and technical manpower that is required. There are also conversion costs involved in switching from the old system to the database system. This stage is very important because the organization must decide how the existing system will be converted into the new database environment.  
+
+**Roman Urdu:**  
+Jab ek organization database system par shift karne ka faisla karti hai, to sirf paisa aur technical manpower hi nahi chahiye hota. Conversion costs bhi hoti hain jo purane system ko nayi database environment mein convert karne ke liye lagti hain. Ye stage bohot important hota hai kyunki is waqt decide karna hota hai ke purane system ko database system mein kaise convert kiya jaye.  
+
+---
+
+### Difficult Recovery Procedures  
+
+Although database systems provide efficient methods for data recovery after a disaster, the process of recovering a crashed database is still highly technical. It requires professional skills and expertise to perform proper recovery and bring the system back to a consistent state.  
+
+**Roman Urdu:**  
+Halaanke database systems data recovery ke efficient tareeqay dete hain jab koi disaster ho, lekin crashed database ko recover karna phir bhi bohot technical process hota hai. Iske liye professional skills aur expertise ki zarurat hoti hai taake recovery sahi tareeqay se ho aur system wapis consistent state mein aa jaye.  
+
+## 4. Importance of Data 
+
+## Data as a Resource  
+
+A resource is anything that is valuable for an organization. An organization can have many resources, such as buildings, furniture, vehicles, technical staff, managers, supporting staff, and machinery. All these resources are used carefully to get maximum benefit. In the same way, data is also a very important resource and should be considered equally important as other resources.  
+
+Resource woh cheez hoti hai jo organization ke liye valuable ho. Kisi organization ke paas bohot si resources hoti hain jaise buildings, furniture, vehicles, technical staff, managers, supporting staff aur machinery. Ye saari resources carefully use ki jati hain taake maximum faida uthaya ja sake. Usi tarah data bhi ek bohot important resource hai aur isay bhi utna hi important samajhna chahiye jitna baaki resources ko samjha jata hai.  
+
+## Why we call Data a Resource?  
+
+Data is considered a true resource because it helps an organization make the right decisions at the right time. Only data can provide correct information, which allows proper use of other organizational resources. If the required data is not available on time or not in the correct format, the organization cannot make good and effective decisions. Such wrong or delayed decisions can lead to the failure of the organization or business.  
+
+Data ko ek asal resource is liye mana jata hai kyunke yeh organization ko sahi waqt par sahi decisions lene mein madad karta hai. Sirf data hi correct information provide karta hai jo baaki organizational resources ka sahi istemal mumkin banata hai. Agar required data waqt par available na ho ya sahi format mein na ho, to organization achay aur effective decisions nahi le sakti. Aise ghalat ya late decisions organization ya business ki failure ka sabab ban sakte hain.  
+
+--- 
+
+
+
+
+
+
+
+
+
