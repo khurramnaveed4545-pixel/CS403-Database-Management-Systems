@@ -111,6 +111,15 @@ Databases ke kuch major faide ye hain:
 
 # Lecture 2 of DBMS ( Database Managment Systems )
 
+# Table of Contents
+
+1. **Difference between Data and Information**
+2. **Further Advantages of Database Systems** 
+3. **Cost Involved**
+4. **Importance of Data** 
+5. **Levels of Data** 
+6. **Users of Database Systems** 
+
 ## 1. Difference between Data and Information  
 
 **Data**  
@@ -233,6 +242,51 @@ Resource woh cheez hoti hai jo organization ke liye valuable ho. Kisi organizati
 Data is considered a true resource because it helps an organization make the right decisions at the right time. Only data can provide correct information, which allows proper use of other organizational resources. If the required data is not available on time or not in the correct format, the organization cannot make good and effective decisions. Such wrong or delayed decisions can lead to the failure of the organization or business.  
 
 Data ko ek asal resource is liye mana jata hai kyunke yeh organization ko sahi waqt par sahi decisions lene mein madad karta hai. Sirf data hi correct information provide karta hai jo baaki organizational resources ka sahi istemal mumkin banata hai. Agar required data waqt par available na ho ya sahi format mein na ho, to organization achay aur effective decisions nahi le sakti. Aise ghalat ya late decisions organization ya business ki failure ka sabab ban sakte hain.  
+
+## 5 Levels of Data
+
+# Real World Data
+
+The real world level of data is the level where entities or objects exist in reality. It means that any object in real life has a name and other identifiable features that help us recognize it.  
+
+**Simple words men**  
+Real world level ka data wo level hai jahan objects ya entities haqeeqat mein mojood hoti hain. Iska matlab hai ke har object ka naam aur doosre pehchan ke attributes hotay hain jo us object ko pehchan ne mein madad karte hain.  
+
+**Example:**  
+Any Student  
+
+---
+
+# Meta Data
+
+Meta data defines how data about real-world entities will be stored in the database. It is also called a schema. Meta data specifies what type of data will be stored, the size of each attribute, and how many attributes will be used.  
+
+**Simple words men**  
+Meta data batata hai ke real world entities ka data database mein kaise store hoga. Isay schema bhi kehte hain. Meta data ye specify karta hai ke kis type ka data store hoga, har attribute ka size kya hoga, aur kitne attributes use honge.  
+
+**Example:**  
+- Name, Character Type, 25 character size field  
+- Age, Date Type, 8 bytes size  
+- Class, Alphanumeric, 8 bytes size field  
+
+---
+
+# Existence of Data
+
+Existence of data shows the actual data for entities in the real world according to the rules defined in the Meta data.  
+
+**Simple words men**  
+Existence of data asli data dikhata hai jo real world entities ke liye Meta data mein define rules ke mutabiq mojood hota hai.  
+
+**Example:**  
+
+| Name | Age        | Class   |
+|------|------------|---------|
+| Ali  | 20/8/1979  | MCS-I   |
+| Amir | 22/3/1978  | MCS-II  |
+
+
+
 
 --- 
 
