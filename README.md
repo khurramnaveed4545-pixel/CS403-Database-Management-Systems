@@ -287,8 +287,6 @@ Existence of data asli data dikhata hai jo real world entities ke liye Meta data
 
 # 5.  Users of Database Systems:
 
-# Users of Database Systems
-
 ## 1. Application Programmers
  
 Application programmers are people who create different types of database application programs. They design applications according to the needs of other users in a specific environment. They are skilled and understand the database structure and the organization's requirements.  
