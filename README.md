@@ -268,7 +268,7 @@ Database systems are very much beneficent to enterprises and businesses, some of
  
 Database systems come with several built-in costs. One of the major costs is the requirement of specialized software to run the database, additional hardware, and technically skilled staff. To fulfill all these requirements, an organization needs to invest a large amount of money.  
 
-**Roman Urdu:**  
+**Simple words men**  
 Database systems ke sath kuch built-in kharchay hote hain. Sabse bara kharcha specialized software ka hota hai jo database chalane ke liye chahiye hota hai, phir extra aur specialized hardware ki zarurat hoti hai, aur technically skilled staff ki bhi requirement hoti hai. In sab cheezon ko pura karne ke liye organization ko acha khasa paisa invest karna parta hai.  
 
 ---
@@ -277,7 +277,7 @@ Database systems ke sath kuch built-in kharchay hote hain. Sabse bara kharcha sp
  
 When an organization decides to move to a database system, it is not only financial and technical manpower that is required. There are also conversion costs involved in switching from the old system to the database system. This stage is very important because the organization must decide how the existing system will be converted into the new database environment.  
 
-**Roman Urdu:**  
+**Simple words men**  
 Jab ek organization database system par shift karne ka faisla karti hai, to sirf paisa aur technical manpower hi nahi chahiye hota. Conversion costs bhi hoti hain jo purane system ko nayi database environment mein convert karne ke liye lagti hain. Ye stage bohot important hota hai kyunki is waqt decide karna hota hai ke purane system ko database system mein kaise convert kiya jaye.  
 
 ---
@@ -286,7 +286,7 @@ Jab ek organization database system par shift karne ka faisla karti hai, to sirf
 
 Although database systems provide efficient methods for data recovery after a disaster, the process of recovering a crashed database is still highly technical. It requires professional skills and expertise to perform proper recovery and bring the system back to a consistent state.  
 
-**Roman Urdu:**  
+**Simple words men**  
 Halaanke database systems data recovery ke efficient tareeqay dete hain jab koi disaster ho, lekin crashed database ko recover karna phir bhi bohot technical process hota hai. Iske liye professional skills aur expertise ki zarurat hoti hai taake recovery sahi tareeqay se ho aur system wapis consistent state mein aa jaye.  
 
 # 4. Importance of Data 
