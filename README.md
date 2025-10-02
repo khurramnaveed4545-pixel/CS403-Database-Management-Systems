@@ -691,7 +691,7 @@ Yani ye batata hai ke database me kaunsa data store hoga, uska type kya hoga, au
 
 ## Kya hota hai Conceptual View?
 
-<img width="497" height="339" alt="c" src="https://github.com/user-attachments/assets/17f0f7e1-1def-4b22-b5d0-6f49f5c94514" />
+<img width="1024" height="1024" alt="Gemini_Generated_Image_itqb69itqb69itqb" src="https://github.com/user-attachments/assets/13e641da-d620-4f14-b0f0-0640d6b2f1b4" />
 
 - Ye **organization ka complete data** store karta hai, is liye isse **community view** bhi kaha jata hai.  
 - Isme har entity (jaise Student, Customer, Product) ke attributes (Name, Age, Price, Stock) aur unke beech ke **relationships** define kiye jate hain.  
