@@ -590,3 +590,148 @@ Mappings ka process teen steps mein hota hai:
 | **Analogy**             | Ghar ki **foundation aur bricks**                         | Ghar ka **blueprint/naqsha**                                             | Ghar ka **user ka view** (living room, kitchen, etc.)            | Internal: Servers, Conceptual: YouTube schema, External: App interface |
 
 
+# 📚 Overview of Lecture  4 
+
+- Internal Schema of the Database Architecture  
+- Data Independence  
+- Different aspects of the DBMS  
+
+---
+
+##  Internal / Physical View (Schema) ki Tafseel  
+
+**Internal View** Three-Level Architecture ki **teesri aur sabse nichli satah (lowest level)** hai.  
+Iska kaam hai decide karna ke **data storage media** par data kaise rakha jaayega.  
+
+---
+
+### 1️⃣ Bunyadi Zimmedari aur Maqsad  
+
+- **Data Storage Format:** Data ko aise format mein store karna jo sirf DBMS padh sake.  
+- **DBMS ka Ikhtiyar:** DBMS faisla karta hai ke data ko disk par kaise store karna hai, aur yeh faisla **DBA (Database Administrator)** ke requirements par mabni hota hai.  
+
+---
+
+### 2️⃣ Internal View aur Physical View mein Farq  
+
+Aksar in dono terms ko ek hi maana jaata hai,  
+lekin asal mein unke darmiyan ek **bareek sa farq** hota hai.  
+
+<img width="589" height="330" alt="bb" src="https://github.com/user-attachments/assets/d523540f-7a27-4c35-92b3-7c5867f29c51" />
+
+---
+
+### 3️⃣ DBMS ki taraf se Izaafi Maloomat  
+
+DBMS data ko store karte waqt apni taraf se kuch **extra information** add karta hai taake performance aur retrieval behtar ho sake:  
+
+- **Indexing:** File Organization ko implement karne ke liye DBMS indexes banata hai.  
+- **Data Retrieval:** Jab data wapas manga jata hai, DBMS unhi indexes ko use karke fast retrieval karta hai.  
+
+---
+
+### 4️⃣ Ahem Faisle aur Khasiyatain (Features)  
+
+Is satah par DBMS kuch important decisions leta hai jo **performance aur security** se mutaliq hote hain:  
+
+- **Space Optimization:** Storage space ko efficiently use karna (jaise data compression) bina performance compromise kiye.
+- 
+- **Security:** Data ko secure rakhne ke liye **encryption algorithms** ka istemaal.  
+- **Internal vs External Boundary:**  
+  - Internal Level: Data ko kaise physically store karna hai.  
+  - External Level: Data ko user ko kaise represent karna hai.  
+
+---
+
+#  Inter-Schema Mapping (Maanpaniyaan)  
+
+**Mr. Naveed**, yahan **Inter-Schema Mapping** ki tafseeli wazahat di gayi hai, jaisa ke aapne farmaya.  
+Yeh woh *"invisible bridge"* hai jo database ke mukhtalif **nazariyon (views)** ko aapas mein jode rakhta hai.  
+
+---
+
+##  Inter-Schema Mapping Kya Hai?  
+
+**Mapping** ek aisa mechanism hai jiske zariye database ke ek **satah (level)** ke records ya data ko doosri satah ke **badle hue format** se joda jaata hai.  
+
+**Maqsad:**  
+- Yeh ensure karta hai ke har user ko data uski zaroorat ke mutabiq mile,  
+- Bhale hi andaruni storage format kuch bhi ho.  
+
+---
+
+##  Buniyadi Mappings ki Qismain  
+
+Three-Level Architecture mein do ahem qisam ki mappings hoti hain:  
+
+1. **External / Conceptual Mapping (Ext/Con Mapping)**  
+   - Jab **External Level** ka data (user ka view) **Conceptual Level** ke data se joda jaata hai.  
+
+2. **Conceptual / Internal Mapping (Con/Int Mapping)**  
+   - Jab **Conceptual Level** ka data **Internal Level** ke data se joda jaata hai.  
+
+---
+
+##  Mappings Ka Amal (The Hidden Mechanism)  
+
+- Yeh mappings **Mapping Functions** ke zariye perform hoti hain.  
+- Mapping Functions ek tarah ka **conversion system ya formula** hote hain jo:  
+  - Data ko ek format se doosre mein **tabdeel** karte hain.  
+  - User ko hamesha **consistent aur relevant view** faraham karte hain.  
+
+---
+
+#  Data Independence ki Wazahat (Explanation)  
+
+**Data Independence** ka matlab hai ke:  
+- **Data**, **Database**, aur **Data Applications** ek doosre se **azaad (independent)** hote hain.  
+
+---
+
+##  Three-Level Architecture se Pehle  
+
+Traditional **file processing systems** mein:  
+- Application programs aur data ek doosre par **depend** karte the.  
+- Agar data mein koi tabdeeli hoti thi, to related applications ko bhi modify karna padta tha.  
+
+**Masla (Problem):**  
+- Agar **Internal / Physical Level** mein ya **data access strategy** mein koi tabdeeli aati thi,  
+- To **External Level** par chalne wale applications us changed data ko access nahi kar paate the.  
+- Natija: Applications fail ho jate the aur kabhi kabhi **poora system crash** ho sakta tha.  
+
+---
+
+##  Three-Level Architecture ka Maqsad  
+
+**Data Independence** is architecture ka **buniyadi maqsad (major most objective)** hai.  
+
+- Jab **data aur applications** ek doosre se azaad hote hain:  
+  - System ke kisi bhi component mein aasani se tabdeeli ki ja sakti hai.  
+  - Doosre components ki functionality par iska koi asar nahi padta.  
+
+**Result:**  
+
+- Is architecture ke zariye hum **External/Conceptual** aur **Conceptual/Internal** independence dono hasil karte hain.  
+
+---
+
+##  Data Independence ki Do Aqsaam (Two Types)  
+
+Data Independence ko do qisam mein taqseem kiya jaata hai:  
+
+1. **Logical Data Independence**  
+   - External aur Conceptual levels ke darmiyan azaadi.  
+   - Agar Conceptual Schema mein changes kiye jayein (jaise naya attribute add karna),  
+     to External Views aur user applications par asar nahi padta.
+
+<img width="635" height="305" alt="nnnnn" src="https://github.com/user-attachments/assets/5b4445a7-74db-4e76-8498-8fd33363dbac" />
+
+
+2. **Physical Data Independence**  
+   - Conceptual aur Internal levels ke darmiyan azaadi.  
+   - Agar Internal Schema mein koi tabdeeli hoti hai (jaise file organization ya storage device badalna),  
+     to Conceptual Schema aur External Views par iska koi asar nahi hota.  
+
+---
+
+
