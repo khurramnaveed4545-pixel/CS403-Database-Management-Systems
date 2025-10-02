@@ -452,8 +452,6 @@ DBAs continuously database activities monitor karte hain taake users rules follo
 
 Database systems ko **standardize** karna future growth ke liye bohot zaroori hai. Matlab agar ek system kisi **standard** ke mutabiq banaya jaye, to usko use karna aur aage expand karna bohot easy ho jata hai.  
 
-<img width="542" height="415" alt="ccc" src="https://github.com/user-attachments/assets/843e2317-f17d-4e3d-b267-cd6b1f8c77e7" />
-
 ---
 
 ## Standard ka Fayda
@@ -480,6 +478,8 @@ Ye hi wo **3-level database architecture** hai jo sabse popular aur agreed stand
 ---
 
 ## Three-Level Schema Architecture ke Benefits
+
+<img width="1024" height="1024" alt="Gemini_Generated_Image_hhmlvhhhmlvhhhml" src="https://github.com/user-attachments/assets/4163eb12-59c0-47e1-8a15-9734b273b86f" />
 
 ### 1. Different Users, Different Views  
 
@@ -547,6 +547,9 @@ taa’ke ek level ki details doosre level se **isolate (alag)** rahen.
 
 ##  Internal Level (Core of Database Architecture)
 
+<img width="1024" height="1024" alt="Gemini_Generated_Image_524smp524smp524s" src="https://github.com/user-attachments/assets/4a3d892a-344b-4b67-82c0-01e9ee3ae948" />
+
+
 Database architecture ka **core** internal schema hota hai.  
 Ye level sari **internal details** implement karta hai aur ye hi database ka **intention** define karta hai.  
 
@@ -561,6 +564,7 @@ Ye level sari **internal details** implement karta hai aur ye hi database ka **i
 ### Real-world Example  
 
 Ek **hospital database** design karte waqt:  
+
 - Intention hoti hai ke har patient ka **Name, CNIC, DOB, Medical History** store ho.  
 - Agar baad me hume lagay ke "Medical History" store karni hi nahi chahiye thi,  
   to is intention ko change karna mushkil aur risky hoga,  
@@ -613,7 +617,7 @@ Database ke alag-alag levels pe changes karne ke different impacts hotay hain:
 
 # External View (Level, Schema or Model)
 
-<img width="568" height="319" alt="2" src="https://github.com/user-attachments/assets/1d11f7e5-9add-403c-847d-daf975f8aed5" />
+<img width="1024" height="1024" alt="Gemini_Generated_Image_524smp524smp524s (1)" src="https://github.com/user-attachments/assets/05411b05-14d2-4885-80cb-0cd5159cf3a5" />
 
 External View database ka **end-user level** hota hai. Is level par data uss form me show kiya jata hai jaisa user ko chahiye hota hai. Har user ka apna requirement alag hota hai, is liye unke hisaab se external views banaye jate hain.  
 
