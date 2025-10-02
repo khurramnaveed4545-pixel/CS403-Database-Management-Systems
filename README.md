@@ -439,313 +439,103 @@ DBAs continuously database activities monitor karte hain taake users rules follo
 
 --- 
 
-# Lecture No. 03
+## Lecture 03: The Three-Level Architecture  
 
-## Overview of Lecture
+**Three-Level Architecture** (jisay **ANSI SPARK architecture** bhi kehte hain, 1975 mein propose hui) ek fundamental standard hai DBMS ka.  
 
-- **Database Architecture**  
-- **External View of the Database**  
-- **Conceptual View of the Database**
-
-
-# Database Architecture
-
-Database systems ko **standardize** karna future growth ke liye bohot zaroori hai. Matlab agar ek system kisi **standard** ke mutabiq banaya jaye, to usko use karna aur aage expand karna bohot easy ho jata hai.  
+Is ka main goal hai **Data Independence** hasil karna, yani user ki view ko physical storage details se alag karna.  
 
 ---
 
-## Standard ka Fayda
+## 1. External View / Level (Bairooni Satah)  
 
-1. **New system banana easy**
-   Agar kisi organization ko new system develop karna hai jo same kaam kare, to wo pehle se defined standard ko use karke banayegi. Is se development fast aur easy ho jata hai.  
-   🔹 *Example:* Agar universities ek standard follow karein students ke records store karne ka, to har university easily new student management system bana sakti hai.  
+Yeh sabse **upar ka level** hai jo har user ya application program ke liye customized view banata hai.  
 
-3. **Non-standard system expand karna mushkil**  
-   Jo systems standards pe based nahi hote, unko expand karna bohot mushkil aur costly hota hai.  
-   🔹 *Example:* Agar ek dukaan apna khud ka accounting system bina kisi rule ke banaye, to usme naye features add karna ya new staff ko train karna mushkil hoga.  
+- **Customized User Views**: Ek hi database ke multiple external views ho sakte hain.  
+- **Abstraction aur Security**: Implementation details (Conceptual aur Internal views) user se chhupa kar rakhta hai.  
+- **Derived Data**: Yeh level wo data bhi show kar sakta hai jo stored values se calculate hota hai (jaise DOB se employee ki age nikalna).
+- **Goal**: User ko data us tarah dikhana jesa wo chahta hai.
 
-4. **Staff training easy**  
-   Agar system standard pe bana ho to staff ko train karne ki zaroorat nahi hoti. New staff bhi easily kaam shuru kar sakta hai.  
-   🔹 *Example:* Microsoft Excel jesa standard tool seekhna easy hai kyunki har jagah same rules follow hote hain.  
+- Yeh woh satah hai jo har alag user ko sirf woh data dikhati hai jiski usko zaroorat hai, bilkul uske Mobile App 📱 ki tarah.
 
----
-
-## ANSI/SPARC Standard
-
-1975 me **ANSI/SPARC** ne ek database standard propose kiya tha jo aaj tak duniya bhar me use ho raha hai.  
-Ye hi wo **3-level database architecture** hai jo sabse popular aur agreed standard hai.  
+<img width="785" height="349" alt="e" src="https://github.com/user-attachments/assets/13d6329a-84fd-4fb1-8556-dc744f71a0e7" />
 
 ---
 
-## Three-Level Schema Architecture ke Benefits
+## 2. Conceptual View / Level (Tasawwurati / Logical Satah)  
 
-<img width="1024" height="1024" alt="Gemini_Generated_Image_hhmlvhhhmlvhhhml" src="https://github.com/user-attachments/assets/4163eb12-59c0-47e1-8a15-9734b273b86f" />
+Yeh level database ka **overall logical structure** define karta hai jo poore users community ke liye hota hai.  
 
-### 1. Different Users, Different Views  
+- **Complete Schema**: Entities, attributes aur unke relationships ki definition hoti hai.  
+- **Intention of Database**: Data types, integrity constraints aur security authorizations yahan define hoti hain.  
+- **Stability**: Conceptual schema stable hota hai aur frequently change nahi hota.  
 
-Har user ko database ka har level access karna zaroori nahi hota.  
-3-level architecture ye allow karta hai ke physical data storage ko user ke view se alag rakha jaye.  
+- Yeh satah poori university 🏢 ke data ko logically define karti hai. Isay aap University ke "Master Blueprint" 🗺️ ki tarah samajh sakte hain, jo batata hai ki kya-kya data store karna hai aur unka aapas mein kya rishta hai.
 
- *Example (YouTube):* 
- 
-- Viewer ko recommended videos aur likes count dikhte hain  
-- Creator ko analytics aur revenue dikhte hain  
-- Admin ko copyright aur policy violations ka data dikhai deta hai  
+<img width="595" height="529" alt="c" src="https://github.com/user-attachments/assets/7c33712e-1a65-45fd-afba-205b077352e2" />
 
----
-
-### 2. Same Data, Different Format 
-
-Database me data ek format me stored hota hai, lekin users usko apne requirement ke mutabiq dekh sakte hain.  
-
- *Example (Date of Birth):*  
-- Database me stored: `28-03-1987` (dd-mm-yyyy)  
-- Exam Department: `March-28-1987`  
-- Registrar: `03/28/1987`  
-- Library: `28/03/87`  
-
- 3-level schema ye flexibility deta hai ke internal storage same rahe aur external users apne format me data dekh saken.  
+- **Key Point:** Is satah par data structure tay hota hai. Agar University koi naya "Executive MBA" program shuru karti hai, toh uski details is Master Blueprint (Conceptual Schema) mein add hongi.
 
 ---
 
-### 3. Security aur Hiding Internal Details 
+## 3. Internal View / Level (Androoni / Physical Satah)  
 
-Ye architecture internal system ki details ko users se hide karta hai. Unauthorized log data ya system access nahi kar pate.  
+Yeh sabse **neeche ka level** hai jo batata hai data storage devices par physically kaise store hota hai.  
 
- *Example (Banking):*  
-Customer sirf apna balance aur transactions dekh sakta hai, lekin usko system ki database storage details nahi dikhai deti.  
+- **Storage Details**: Storage efficiency par focus karta hai (compression, indexes, hashing, etc.).  
+- **DBMS Control**: DBMS storage aur retrieval mechanisms ko handle karta hai.  
+- **Separation from Physical Level**: OS binary format ko handle karta hai, lekin DBMS internal schema ko manage karta hai.
 
----
+<img width="601" height="306" alt="ex" src="https://github.com/user-attachments/assets/4def4488-91f8-4c28-83b5-f2204f386e5d" />
 
-### 4. Easy Changes aur Maintenance  
-
-Agar kisi user ki requirement change ho jaye to sirf us user ka **external view** modify karna hota hai, puri database ko nahi.  
-Isi tarah agar storage mechanism change karna ho (jaise new server ya indexing technique), to bhi users aur applications effect nahi hote.  
-
- *Example (Netflix):*  
-Netflix agar apna video storage Amazon S3 se kisi aur cloud pe shift kare, to users ke liye koi farq nahi padega — unko videos same tarah stream hongi.  
+**Key Point:** Agar University koi naya aur tez SSD storage system lagati hai, toh sirf yeh Internal/Physical View badlega. Upar ke Conceptual View ya students ke External View (Result Card) par koi asar nahi padega. Isi ko Physical Data Independence kehte hain
 
 ---
 
-## Recap (Simple Lafzon Me)
+## 🔗 Inter-Schema Mappings (Rabt)  
 
-- **External Level** → User jo dekh raha hai (custom view)  
-- **Conceptual Level** → Logical structure (tables, relationships)  
-- **Internal Level** → Data ka asli storage (disk, indexing, compression)  
+Mappings wo mechanisms hain jo alag alag levels ke darmiyan data aur requests ko transform karte hain.  
 
-
-# Database Architecture 
-
-Database ke andar **schemas** hotay hain jo basically ek **repository (storehouse)** ki tarah kaam karte hain.  
-Yani schemas define karte hain ke database me kis tarah ke structures store honge —  
-chaahe ek chhoti entity (jaise ek student) ho ya poori organization ka data.  
-
-Isi wajah se database architecture me **different schemas** ko **different levels** pe rakha jata hai  
-taa’ke ek level ki details doosre level se **isolate (alag)** rahen.  
+| **Mapping Type**        | **Connection**         | **Functionality** |
+|--------------------------|------------------------|-------------------|
+| External / Conceptual    | External ↔ Conceptual  | User-specific views ko overall logical model mein translate karta hai. |
+| Conceptual / Internal    | Conceptual ↔ Internal  | Logical structure ko physical storage strategy se link karta hai. |
 
 ---
 
-##  Internal Level (Core of Database Architecture)
+## ⭐ Major Benefit: Data Independence 
 
-<img width="1024" height="1024" alt="Gemini_Generated_Image_524smp524smp524s" src="https://github.com/user-attachments/assets/4a3d892a-344b-4b67-82c0-01e9ee3ae948" />
+Is architecture ki sabse bari strength hai **Data Independence**. Yeh ensure karta hai ke neeche ke level par hone wali changes ka upper levels par *koi ya bohot kam effect* ho.  
 
+- **Logical Data Independence**: Agar conceptual schema mein koi change ho (jaise ek attribute add karna), to users ke external views affect nahi hote.  
+- **Physical Data Independence**: Agar internal schema mein koi change ho (jaise file organization ya storage media change karna), to conceptual schema ya external views par asar nahi padta.  
 
-Database architecture ka **core** internal schema hota hai.  
-Ye level sari **internal details** implement karta hai aur ye hi database ka **intention** define karta hai.  
 
-### Internal Schema kya karta hai?  
 
-- Ye define karta hai ke ek **student** ka data kin attributes (jaise: Name, Roll No, DOB) me store hoga.  
-- Ye batata hai ke in attributes ke values kis format me rakhi jayengi (text, numbers, date format etc).  
-- Ye ye bhi decide karta hai ke **kon user database ko update/change** kar sakta hai aur kitni had tak.  
 
- Isko hum database ka **niyat (intention)** kehte hain, jo lagbhag permanent hota hai.  
 
-### Real-world Example  
 
-Ek **hospital database** design karte waqt:  
 
-- Intention hoti hai ke har patient ka **Name, CNIC, DOB, Medical History** store ho.  
-- Agar baad me hume lagay ke "Medical History" store karni hi nahi chahiye thi,  
-  to is intention ko change karna mushkil aur risky hoga,  
-  kyunki uske liye puri database structure aur records ko modify karna parega.  
 
----
 
-##  Intention aur Extension  
 
-- **Intention** → Database ki **design time definition** (kis kis cheez ko hamesha ke liye store karna zaroori hai).  
-- **Extension** → Jab database me actual **data populate** kar diya jata hai (matlab real records dal diye jate hain).  
 
- Matlab pehle **design decide hoti hai (intention)**, phir usme **data dalna start hota hai (extension)**.  
 
-### Example (University Database)  
 
-- **Intention**: Har student ka Name, Roll No, Department aur DOB store karna zaroori hai.  
-- **Extension**: Jab new batch ke 1000 students ka data actual database me enter kar diya jata hai.  
 
----
 
-##  Changes aur Unke Effects  
 
-Database ke alag-alag levels pe changes karne ke different impacts hotay hain:  
 
-### Change in Extension (Data Records)  
 
-- Sirf ek record effect hoga.  
-- Mistake ko easily undo kiya ja sakta hai.  
-- **Example**: Ek student ka DOB galti se `2003` ki jagah `2023` enter ho gaya → easy to fix.  
 
-### Change in Intention (Internal Schema)  
 
-- Ye puri database ko effect karta hai.  
-- Bohot risky hai, kyunki chhoti si ghalti puri database ko corrupt ya inconsistent kar sakti hai.  
-- **Example**: Agar ek organization decide kare ke "DOB store hi nahi karna" →  
-  puri database structure change hogi aur saari related queries/reports fail kar sakti hain.  
 
- Is liye **intention change karna avoid karna chahiye** jab tak bohot hi critical na ho.  
 
----
 
-##  Recap in Simple Words  
 
-- **Schema** → Database ka blueprint / design.  
-- **Internal Schema (Intention)** → Permanent design of *what* & *how* to store.  
-- **Extension** → Actual data jo database me enter hota hai.  
-- **Change in Data (Extension)** → Easy aur localized effect.  
-- **Change in Schema (Intention)** → Risky aur puri database ko effect kar sakta hai.  
 
-# External View (Level, Schema or Model)
 
-<img width="1024" height="1024" alt="Gemini_Generated_Image_524smp524smp524s (1)" src="https://github.com/user-attachments/assets/05411b05-14d2-4885-80cb-0cd5159cf3a5" />
 
-External View database ka **end-user level** hota hai. Is level par data uss form me show kiya jata hai jaisa user ko chahiye hota hai. Har user ka apna requirement alag hota hai, is liye unke hisaab se external views banaye jate hain.  
-
----
-
-## Database Users
-
-Database users ko do grounds par classify kiya jata hai:  
-
-1. **Section of the Organization** (department ya branch jahan wo kaam karte hain)  
-2. **Nature of Job** (kaam ka type, jaise HR, Finance, Student, Admin)  
-
----
-
-## Features of External Level
-
-- Har user ko sirf wahi data dikhaya jata hai jo uske kaam ka ho.  
-- Kuch users sirf **view** kar sakte hain, aur kuch ko full **access** hota hai (insert, update, delete).  
-- Ek database me **multiple external views** ho sakte hain, aur har view ek specific user ya group ke liye design hota hai.  
-- User ki **rights & restrictions** carefully decide ki jati hain.  
-
----
-
-## Examples
-
-### 1. Missing Data Handling
-
-Agar ek **Customer ka Phone Number** database me store hai, lekin area code store nahi kiya gaya,  
-to system automatically **City ID** se area code pick karke full phone number bana sakta hai.  
-
-### 2. Derived Data
-
-Agar **Student ka Date of Birth (DOB)** stored hai, lekin admission ke waqt hume student ki **Age** chahiye,  
-to user view DOB se automatically **Age calculate** kar sakta hai aur bata dega ke student admission ke liye eligible hai ya nahi.  
-
----
-
-## Importance of External View
-
-- External view ek **interface** hota hai jiske through user database ko use karta hai.  
-- Ye **easy to use, self-explanatory, aur simple navigation** ke sath design hona chahiye.  
-- External view **facilitator** bhi hota hai aur **barrier** bhi:  
-  - Facilitator → User ko required data easy aur understandable form me provide kare.  
-  - Barrier → User ko wo data access karne se rokay jo uske liye allowed nahi hai.  
-
----
-
-## Flexibility
-
-- Jaise-jaise system grow karta hai, external views ko **modify** kiya ja sakta hai (design, structure, access rights).  
-- Ye changes **logical aur internal schema** ko affect nahi karte.  
-
----
-
-## Diagram Example (Concept)
-Ek hi data record different users ke external views me alag dikh sakta hai.  
-
-- **User A (Student)**: Sirf apne marks aur attendance dekhega.  
-- **User B (Teacher)**: Puri class ke results aur attendance dekh sakta hai.  
-
- Matlab data same hai, lekin presentation aur access user-specific hoti hai.  
-
----
-
-# Conceptual / Logical View (Roman Urdu Version with Examples)
-
-Conceptual ya Logical View database architecture ka wo level hai jismein **poori database ki definition** hoti hai.  
-Yani ye batata hai ke database me kaunsa data store hoga, uska type kya hoga, aur us data par kaunse rules apply honge.  
-
----
-
-## Kya hota hai Conceptual View?
-
-<img width="1024" height="1024" alt="Gemini_Generated_Image_itqb69itqb69itqb" src="https://github.com/user-attachments/assets/13e641da-d620-4f14-b0f0-0640d6b2f1b4" />
-
-- Ye **organization ka complete data** store karta hai, is liye isse **community view** bhi kaha jata hai.  
-- Isme har entity (jaise Student, Customer, Product) ke attributes (Name, Age, Price, Stock) aur unke beech ke **relationships** define kiye jate hain.  
-
----
-
-## Real-world Example: Company Database
-
-Ek company ka conceptual schema me ye sab details hongi:  
-- Customers  
-- Products (jo stock me hain aur jo deliver hone wale hain)  
-- Retail Stores  
-- Salespersons  
-- Managers  
-
-Aur phir inke relationships:  
-
-- Customer → Products kharidta hai store se.  
-- Customer → Associate hota hai Salesperson se.  
-- Salesperson → Assign hota hai ek Outlet pe.  
-- Outlet → Manage karte hain Managers.  
-
- Matlab conceptual schema entities aur unke relationships ko logically manage karta hai.  
-
----
-
-## Relation with External View
-
-External View me user sirf apni zarurat ka data dekhta hai.  
-Conceptual View ek **base layer** hai jo saare user views ko support karta hai.  
-
-Example:  
-
-- Student apne marks aur attendance dekhta hai.  
-- Teacher puri class ka data dekhta hai.  
-
-Lekin actual data **sirf ek hi copy** me conceptual schema me stored hota hai.  
-
----
-
-## Features of Conceptual Schema
-
-- Entities, Attributes aur Relationships define karta hai.  
-- Data types aur constraints (jaise age > 18, price > 0) hold karta hai.  
-- **Authorization aur Authentication** handle karta hai → sirf authorized users hi data access/change kar sakte hain.  
-- Conceptual Schema **stable hota hai** (baar baar change nahi hota). Agar change karna pare to carefully karna padta hai kyunki iska effect doosre levels par bhi padta hai.  
-
----
-
-## Recap in Simple Words
-
-- **External View** → User ko data uski zarurat ke mutabiq show karta hai.  
-- **Conceptual View** → Database ka **poora logical design** rakhta hai (entities, relationships, constraints, rules, authorization).  
-- Ye hi wo layer hai jisse external views banaye jate hain.  
 
 
 # Three-Level Database Architecture (with YouTube Example)
